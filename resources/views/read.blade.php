@@ -11,41 +11,17 @@
             <th>Age</th>
             <th>Actions</th>
         </thead>
+        @foreach ($students as $student)
         <tr>
-            <td>1</td>
-            <td>Rishu Aggarwal</td>
-            <td>rishuaggarwal@gmail.com</td>
-            <td>12345678</td>
-            <td>9548411522</td>
-            <td>19</td>
+            <td>{{$student->id}}</td>
+            <td>{{$student->name}}</td>
+            <td>{{$student->email}}</td>
+            <td>{{$student->password}}</td>
+            <td>{{$student->mobile}}</td>
+            <td>{{$student->age}}</td>
             <td><a href="{{route('user')}}"><button class="btn btn-warning">view</button></a></td>
         </tr>
-        <tr>
-            <td>1</td>
-            <td>Rishu Aggarwal</td>
-            <td>rishuaggarwal@gmail.com</td>
-            <td>12345678</td>
-            <td>9548411522</td>
-            <td>19</td>
-            <td><a href=""><button class="btn btn-warning">view</button></a></td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Rishu Aggarwal</td>
-            <td>rishuaggarwal@gmail.com</td>
-            <td>12345678</td>
-            <td>9548411522</td>
-            <td>19</td>
-            <td><a href=""><button class="btn btn-warning">view</button></a></td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Rishu Aggarwal</td>
-            <td>rishuaggarwal@gmail.com</td>
-            <td>12345678</td>
-            <td>9548411522</td>
-            <td>19</td>
-            <td><a href=""><button class="btn btn-warning">view</button></a></td>
-        </tr>
+        @endforeach
     </table>
+    {{$students->links()}}
 @endsection

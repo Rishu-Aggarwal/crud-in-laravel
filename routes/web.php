@@ -1,14 +1,12 @@
 <?php
 
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
 Route::prefix('pages')->group(function(){
-    Route::get('/read',function(){
-        return view('read');
-    })->name('read');
     Route::get('/insert',function(){
         return view('insert');
     })->name('insert');
@@ -19,3 +17,4 @@ Route::prefix('pages')->group(function(){
         return view('view');
     })->name('user');
 });
+Route::get('/pages/read',[StudentController::class,'getStudents'])->name('read');
