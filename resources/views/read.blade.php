@@ -23,5 +23,7 @@
         </tr>
         @endforeach
     </table>
+    <div class="row m-4">
     {{$students->links()}}
+    </div>
 @endsection

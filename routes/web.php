@@ -18,3 +18,4 @@ Route::prefix('pages')->group(function(){
     })->name('user');
 });
 Route::get('/pages/read',[StudentController::class,'getStudents'])->name('read');
+Route::post('/pages/add',[StudentController::class,'insertStudent'])->name('add');

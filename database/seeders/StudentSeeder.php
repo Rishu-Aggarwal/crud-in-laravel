@@ -20,7 +20,7 @@ class StudentSeeder extends Seeder
             "password"=>"12345678",
             "conform-password"=>"12345678",
             "age"=>19,
-            "mobile"=>9548411522
+            "mobile"=>"9548411522"
         ]);
         Student::create([
             "id"=>2,
@@ -29,7 +29,7 @@ class StudentSeeder extends Seeder
             "password"=>"12345678",
             "conform-password"=>"12345678",
             "age"=>18,
-            "mobile"=>9557592672
+            "mobile"=>"9557592672"
         ]);
         Student::create([
             "id"=>3,
@@ -38,7 +38,7 @@ class StudentSeeder extends Seeder
             "password"=>"12345678",
             "conform-password"=>"12345678",
             "age"=>19,
-            "mobile"=>9548411522
+            "mobile"=>"9548411522"
         ]);
         Student::create([
             "id"=>4,
@@ -47,7 +47,7 @@ class StudentSeeder extends Seeder
             "password"=>"12345678",
             "conform-password"=>"12345678",
             "age"=>18,
-            "mobile"=>9557592672
+            "mobile"=>"9557592672"
         ]);
     }
 }

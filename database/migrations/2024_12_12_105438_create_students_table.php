@@ -18,8 +18,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('conform-password');
             $table->integer('age');
-            $table->bigInteger('mobile');
-            $table->timestamps();
+            $table->string('mobile');
         });
     }
 

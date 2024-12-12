@@ -1,6 +1,7 @@
 @extends('welcome')
 @section('main')
-<form class="m-4 p-4">
+<form action="/pages/add" method="POST" class="m-4 p-4">
+    @csrf
     <div class="mb-3 row">
         <div class="col-6">
             <label for="email" class="form-label">Email address</label>
@@ -18,7 +19,7 @@
         </div>
         <div class="col-6">
             <label for="mobile" class="form-label">Mobile no</label>
-            <input type="number" class="form-control" id="mobile" aria-describedby="emailHelp" name="mobile" placeholder="0000000000">
+            <input type="text" class="form-control" id="mobile" aria-describedby="emailHelp" name="mobile" placeholder="0000000000">
         </div>
     </div>
     <div class="mb-3 row">
@@ -28,7 +29,7 @@
         </div>
         <div class="col-6">
             <label for="conformpassword" class="form-label">Conform password</label>
-            <input type="password" class="form-control" id="conformpassword"  name="conform-password" placeholder="Enter conform password..">
+            <input type="password" class="form-control" id="conformpassword"  name="conformPassword" placeholder="Enter conform password..">
         </div>
     </div>
     <button type="submit" class="btn btn-danger">Add</button>
